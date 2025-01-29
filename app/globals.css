@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #6ee7b7;
+  --secondary: #3b82f6;
+  --accent: #f472b6;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-black text-white;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply backdrop-blur-md bg-white/5 border border-white/10;
+  }
+  
+  .section-padding {
+    @apply py-20;
+  }
+  
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Hide default cursor */
+* {
+  cursor: none !important;
+}
+
+/* Show cursor on touch devices */
+@media (hover: none) {
+  * {
+    cursor: auto !important;
+  }
+  
+  .custom-cursor {
+    display: none !important;
+  }
+}
+
+/* Smooth scrolling for the running text */
+.running-text {
+  will-change: transform;
+}
+
