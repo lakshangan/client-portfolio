@@ -1,10 +1,8 @@
-'use client'
+'use client';
 
-import { motion } from 'framer-motion'
-import Image from 'next/image'
-import image from '/images/kirlos.jpeg';
-
-
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Kirlos from '/app/images/kirlos.jpeg';
 
 export default function About() {
   return (
@@ -22,8 +20,9 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <img
-              src="./images/kirlos.jpeg"
+
+             <Image
+              src={Kirlos}// Path relative to the `public` directory
               alt="Kirlosker"
               className="rounded-full shadow-lg"
               width={400}
@@ -43,6 +42,5 @@ export default function About() {
         </div>
       </div>
     </motion.section>
-  )
+  );
 }
-

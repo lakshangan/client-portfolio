@@ -1,18 +1,19 @@
-'use client'
 
-import { motion } from 'framer-motion'
-import Image from 'next/image'
+'use client';
+
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const tools = [
-  { name: 'Adobe Premiere Pro', icon: '/icons/premiere-pro.png' },
-  { name: 'Adobe After Effects', icon: '/icons/after-effects.png' },
-  { name: 'DaVinci Resolve', icon: '/icons/davinci-resolve.png' },
-  { name: 'Final Cut Pro', icon: '/icons/final-cut-pro.png' },
-  { name: 'Adobe Photoshop', icon: '/icons/photoshop.png' },
-  { name: 'Adobe Audition', icon: '/icons/audition.png' },
-  { name: 'Blender', icon: '/icons/blender.png' },
-  { name: 'Cinema 4D', icon: '/icons/cinema-4d.png' },
-]
+  { name: 'Adobe Premiere Pro', icon:'/images/premier.png' },
+  { name: 'Adobe After Effects', icon: '/images/Adob_after.png' },
+  { name: 'DaVinci Resolve', icon: '/images/Davanci1.png' },
+  { name: 'Final Cut Pro', icon: '/images/cut_pro1.png' },
+  { name: 'Adobe Photoshop', icon: '/images/photoshop.png' },
+  { name: 'Adobe Audition', icon: '/images/Audition.png' },
+  { name: 'Blender', icon: '/images/blender.png' },
+  { name: 'Cinema 4D', icon: '/images/Camara_4D.png' },
+];
 
 export default function Tools() {
   return (
@@ -50,12 +51,12 @@ export default function Tools() {
                 <Image
                   src={tool.icon}
                   alt={tool.name}
-                  layout="fill"
-                  objectFit="contain"
+                  fill
+                  style={{ objectFit: 'contain' }} // Replaces objectFit prop
                   className="drop-shadow-lg transition-all duration-300 group-hover:drop-shadow-2xl"
                 />
               </motion.div>
-              <motion.span 
+              <motion.span
                 className="text-sm text-center text-white/80 group-hover:text-primary transition-colors duration-300"
                 whileHover={{ scale: 1.05 }}
               >
@@ -66,6 +67,5 @@ export default function Tools() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

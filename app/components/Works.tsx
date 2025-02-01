@@ -17,7 +17,7 @@ const works = {
     { title: 'Service Promo', url: 'https://example.com/commercial3' },
   ],
   'Music Videos': [
-    { title: 'Artist Performance', url: 'https://example.com/music1' },
+    { title: 'Artist Performance', url: 'https://youtu.be/Svtr-p4mrQ8?si=b7cGHFVRlZmIKTPC/music1' },
     { title: 'Lyric Video', url: 'https://example.com/music2' },
     { title: 'Concert Highlights', url: 'https://example.com/music3' },
   ],
