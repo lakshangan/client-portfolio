@@ -12,7 +12,6 @@ const tools = [
   { name: 'Adobe Photoshop', icon: '/images/photoshop.png' },
   { name: 'Adobe Audition', icon: '/images/Audition.png' },
   { name: 'Blender', icon: '/images/blender.png' },
-  { name: 'Cinema 4D', icon: '/images/Camara_4D.png' },
 ];
 
 export default function Tools() {
